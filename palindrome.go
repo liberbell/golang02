@@ -21,7 +21,7 @@ func main() {
 	for i := 0; i < len(chars); i++ {
 		buffer.WriteString(chars[i])
 	}
-	for i := len(chars) - 2; i >= 0; i++ {
+	for i := len(chars) - 2; i >= 0; i-- {
 		buffer.WriteString(chars[i])
 	}
 	fmt.Println("buffer.String()")
