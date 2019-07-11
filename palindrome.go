@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+)
 
 func main() {
 	var chars [6]string
@@ -14,9 +17,11 @@ func main() {
 	fmt.Println("A palindrome")
 	fmt.Println("***********")
 
-  var buffer bytes.Buffer
-  for i := 0; i < len(chars); i++ {
-    buffer.WriteString(chars[i])
-  }
-  for i := len(chars) - 2;
+	var buffer bytes.Buffer
+	for i := 0; i < len(chars); i++ {
+		buffer.WriteString(chars[i])
+	}
+	for i := len(chars) - 2; i >= 0; i++ {
+		buffer.WriteString(chars[i])
+	}
 }
