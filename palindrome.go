@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var chars [6]string
 	chars[0] = "a"
@@ -8,4 +10,7 @@ func main() {
 	chars[3] = "o"
 	chars[4] = "h"
 	chars[5] = "p"
+
+	fmt.Println("A palindrome")
+	fmt.Println("***********")
 }
