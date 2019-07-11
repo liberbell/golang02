@@ -13,4 +13,10 @@ func main() {
 
 	fmt.Println("A palindrome")
 	fmt.Println("***********")
+
+  var buffer bytes.Buffer
+  for i := 0; i < len(chars); i++ {
+    buffer.WriteString(chars[i])
+  }
+  for i := len(chars) - 2;
 }
