@@ -13,4 +13,6 @@ func main() {
 	// if err == nil {
 	fmt.Println("string length:", stringLength)
 	// }
+
+	fmt.Printf("value of aNumber: %v\n", aNumber)
 }
