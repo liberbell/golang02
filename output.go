@@ -7,5 +7,8 @@ func main() {
 	str2 := "jumped over"
 	str3 := "the lazy brown dog."
 
-	fmt.Println(str1, str2, str3)
+	stringLength, err := fmt.Println(str1, str2, str3)
+	if err == nil {
+		fmt.Println("string length:", stringLength)
+	}
 }
