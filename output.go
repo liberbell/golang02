@@ -9,8 +9,8 @@ func main() {
 	aNumber := 42
 	isTrue := true
 
-	stringLength, err := fmt.Println(str1, str2, str3)
-	if err == nil {
-		fmt.Println("string length:", stringLength)
-	}
+	stringLength, _ := fmt.Println(str1, str2, str3)
+	// if err == nil {
+	fmt.Println("string length:", stringLength)
+	// }
 }
