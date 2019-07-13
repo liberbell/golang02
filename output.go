@@ -16,6 +16,6 @@ func main() {
 
 	fmt.Printf("value of aNumber: %v\n", aNumber)
 	fmt.Printf("value of isTrue: %v\n", isTrue)
-	fmt.Printf("value of aNumber as float: %.2f\n", aNumber)
+	fmt.Printf("value of aNumber as float: %.2f\n", float64(aNumber))
 
 }
