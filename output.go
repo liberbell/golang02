@@ -18,4 +18,5 @@ func main() {
 	fmt.Printf("value of isTrue: %v\n", isTrue)
 	fmt.Printf("value of aNumber as float: %.2f\n", float64(aNumber))
 
+	fmt.Printf("Data types: %T, %T, %T, %T and %T", str1, str2, str3, isTrue, aNumber)
 }
