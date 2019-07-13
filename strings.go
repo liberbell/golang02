@@ -4,5 +4,5 @@ import "fmt"
 
 func main() {
 	str1 := "An implicitly typed string"
-	fmt.Println("str1: %v", str1)
+	fmt.Printf("str1: %v\n", str1)
 }
