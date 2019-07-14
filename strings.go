@@ -21,4 +21,5 @@ func main() {
 	fmt.Println("Equal? non-CaseSensitive", strings.EqualFold(lvalue, uvalue))
 
 	fmt.Println("containing exp?", strings.Contains(str1, "exp"))
+	fmt.Println("containing exp?", strings.Contains(str2, "exp"))
 }
