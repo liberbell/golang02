@@ -19,4 +19,6 @@ func main() {
 	uvalue := "HELLO"
 	fmt.Println("Equal? ", (lvalue == uvalue))
 	fmt.Println("Equal? non-CaseSensitive", strings.EqualFold(lvalue, uvalue))
+
+	fmt.Println("containing exp?", strings.Contains(str1, "exp"))
 }
