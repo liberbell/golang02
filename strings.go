@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	str1 := "An implicitly typed string"
@@ -8,4 +11,6 @@ func main() {
 
 	str2 := "An explicitly typed string"
 	fmt.Printf("str2: %v:%T\n", str2, str2)
+
+	fmt.Println(strings.ToUpper(str1))
 }
