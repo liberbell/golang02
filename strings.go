@@ -7,5 +7,5 @@ func main() {
 	fmt.Printf("str1: %v:%T\n", str1, str1)
 
 	str2 := "An explicitly typed string"
-	fmt.Printf("str1: %v:%T\n", str2, str2)
+	fmt.Printf("str2: %v:%T\n", str2, str2)
 }
