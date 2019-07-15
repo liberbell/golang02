@@ -17,4 +17,8 @@ func main() {
 	} else {
 		fmt.Println("p is nil")
 	}
+
+	var value1 float64 = 42.13
+	pointer1 := &value1
+	fmt.Println("value1: ", *pointer1)
 }
