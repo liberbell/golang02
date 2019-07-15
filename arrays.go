@@ -12,4 +12,6 @@ func main() {
 
 	var numbers = [5]int{5, 3, 1, 2, 4}
 	fmt.Println(numbers)
+
+	fmt.Println("number of colors: ", len(numbers))
 }
