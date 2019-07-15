@@ -5,5 +5,10 @@ import "fmt"
 func main() {
 	var p *int
 
-	fmt.Println("value of p:", *p)
+	if p != nil {
+		fmt.Println("value of p:", *p)
+	} else {
+		fmt.Println("p is nil")
+	}
+
 }
