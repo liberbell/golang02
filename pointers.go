@@ -5,5 +5,5 @@ import "fmt"
 func main() {
 	var p *int
 
-	fmt.Println(p)
+	fmt.Println("value of p:", p)
 }
