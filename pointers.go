@@ -10,5 +10,11 @@ func main() {
 	} else {
 		fmt.Println("p is nil")
 	}
-
+	var v int = 42
+	p = &v
+	if p != nil {
+		fmt.Println("value of p:", *p)
+	} else {
+		fmt.Println("p is nil")
+	}
 }
