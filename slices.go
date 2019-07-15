@@ -14,4 +14,11 @@ func main() {
 
 	colors = append(colors[:len(colors)-1])
 	fmt.Println(colors)
+
+	numbers := make([]int, 5, 5)
+	numbers[0] = 1
+	numbers[1] = 8
+	numbers[2] = 45
+	numbers[3] = 101
+	numbers[4] = 231
 }
