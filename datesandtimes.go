@@ -11,4 +11,6 @@ func main() {
 
 	now := time.Now()
 	fmt.Printf("Now is: %s\n", now)
+
+	fmt.Println("The month is: ", t.Month())
 }
