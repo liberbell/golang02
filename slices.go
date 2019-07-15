@@ -21,4 +21,5 @@ func main() {
 	numbers[2] = 45
 	numbers[3] = 101
 	numbers[4] = 231
+	fmt.Println(numbers)
 }
