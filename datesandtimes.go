@@ -10,5 +10,5 @@ func main() {
 	fmt.Printf("Juno was born: %s\n", t)
 
 	now := time.Now()
-	fmt.Printf("Juno was born: %s\n", now)
+	fmt.Printf("Now is: %s\n", now)
 }
