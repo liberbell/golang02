@@ -22,4 +22,8 @@ func main() {
 	numbers[3] = 101
 	numbers[4] = 231
 	fmt.Println(numbers)
+
+	numbers = append(numbers, 255)
+	fmt.Println(numbers)
+
 }
