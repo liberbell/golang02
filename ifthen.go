@@ -11,5 +11,5 @@ func main() {
 	} else {
 		result = "Greater than or equal to Zero"
 	}
-	fmt.Println(result)
+	fmt.Println("Result: ", result)
 }
