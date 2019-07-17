@@ -16,4 +16,7 @@ func main() {
 
 	delete(states, "OR")
 	fmt.Println(states)
+
+	states["NY"] = "NewYork"
+	fmt.Println(states)
 }
