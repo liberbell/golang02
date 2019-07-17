@@ -18,5 +18,9 @@ func main() {
 	fmt.Println(states)
 
 	states["NY"] = "NewYork"
-	fmt.Println(states)
+
+	for k, v := range states {
+		fmt.Printf("%v: %v\n", k, v)
+	}
+	// fmt.Println(states)
 }
