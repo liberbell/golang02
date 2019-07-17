@@ -7,7 +7,7 @@ func main() {
 	var result string
 
 	if x < 0 {
-		resutl = "Less than zero"
+		result = "Less than zero"
 	} else {
 		result = "Greater than or equal to Zero"
 	}
