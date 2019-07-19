@@ -21,5 +21,6 @@ func main() {
 	default:
 		result = "It`s Weekday!"
 	}
-	fmt.Println("Day", dow, ",", result)
+	// fmt.Println("Day", dow, ",", result)
+	fmt.Println(result)
 }
