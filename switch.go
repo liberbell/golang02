@@ -12,7 +12,7 @@ func main() {
 	dow := rand.Intn(6) + 1
 	fmt.Println("Day", dow)
 
-	resutl := ""
+	result := ""
 	switch dow {
 	case 1:
 		result = "It`s Sunday!"
