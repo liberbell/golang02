@@ -19,6 +19,7 @@ func main() {
 	case 7:
 		result = "It`s Saturday!"
 	default:
-		result = "It`s Monday!"
+		result = "It`s Weekday!"
 	}
+	fmt.Println("Day", dow, ",", result)
 }
