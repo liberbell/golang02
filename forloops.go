@@ -14,4 +14,8 @@ func main() {
 		sum += i
 	}
 	fmt.Println("sum:", sum)
+
+	for i := 0; i < len(colors); i++ {
+		fmt.Println(colors[i])
+	}
 }
