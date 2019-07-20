@@ -9,6 +9,6 @@ func main() {
 
 func FullName(f, l string) (string, int) {
 	full := f + " " + l
-	lenght := len(full)
+	length := len(full)
 	return full, length
 }
