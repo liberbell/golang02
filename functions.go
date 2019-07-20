@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 	dosomething()
+
+	sum := AddValues(22, 11)
 }
 
 func dosomething() {
