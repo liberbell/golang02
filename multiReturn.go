@@ -6,8 +6,8 @@ func main() {
 	n1, l1 := FullName("Zaikah", "Brownshed")
 	fmt.Printf("Fullname: %v, Number of chars: %v\n", n1, l1)
 
-	n1, l1 := FullNameNakedReturn("Zaikah", "Brownshed")
-	fmt.Printf("Naked Fullname: %v, Number of chars: %v\n", n1, l1)
+	n2, l2 := FullNameNakedReturn("Kinsahsha", "Fearywood")
+	fmt.Printf("Naked Fullname: %v, Number of chars: %v\n", n2, l2)
 }
 
 func FullName(f, l string) (string, int) {
