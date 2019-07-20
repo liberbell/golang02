@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("Value: ", sum)
 
 	sum = AddAllValues(12, 54, 59)
-	fmt.Println("Value: ", sum)
+	fmt.Println("New Value: ", sum)
 }
 
 func dosomething() {
