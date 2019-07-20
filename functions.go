@@ -6,6 +6,7 @@ func main() {
 	dosomething()
 
 	sum := AddValues(22, 11)
+	fmt.Println("Value: ", sum)
 }
 
 func dosomething() {
