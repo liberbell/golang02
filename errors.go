@@ -23,4 +23,9 @@ func main() {
     "Mike": true
   }
   attended, ok := attendance["Mike"]
+  if ok {
+    fmt.Println("Mike attended?: ", attended)
+  } else {
+    fmt.Println("No info for Mike")
+  }
 }
