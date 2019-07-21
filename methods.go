@@ -13,7 +13,7 @@ func (d Dog) Speak() {
 }
 
 func (d Dog) SpeakThreeTimes() {
-	d.sound = fmt.Sprintf("%v! %v! %v!\n")
+	d.Sound = fmt.Sprintf("%v! %v! %v!\n")
 	fmt.Print(d.Sound)
 }
 
