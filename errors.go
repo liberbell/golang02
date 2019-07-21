@@ -17,4 +17,9 @@ func main() {
 
 	myError := errors.New("My error string")
 	fmt.Println(myError)
+
+  attendance := map[string]bool {
+    "Ann": true,
+    "Mike": true
+  }
 }
