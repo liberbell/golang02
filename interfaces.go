@@ -12,6 +12,6 @@ func (d Dog) Speak() string {
 }
 
 func main() {
-  poodle := Dog{}
+  poodle := Animal(Dog{})
   fmt.Println(poodle)
 }
