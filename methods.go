@@ -8,7 +8,7 @@ type Dog struct {
 	Sound  string
 }
 
-func (d Dog) Speark() {
+func (d Dog) Speak() {
 	fmt.Println(d.Sound)
 }
 
