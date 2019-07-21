@@ -22,4 +22,5 @@ func main() {
     "Ann": true,
     "Mike": true
   }
+  attended, ok := attendance["Mike"]
 }
