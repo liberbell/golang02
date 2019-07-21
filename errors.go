@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"os"
 )
@@ -13,4 +14,7 @@ func main() {
 	} else {
 		fmt.Println(err.Error())
 	}
+
+	myError := errors.New("My error string")
+	fmt.Println(myError)
 }
