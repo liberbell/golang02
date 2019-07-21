@@ -12,6 +12,11 @@ func (d Dog) Speak() {
 	fmt.Println(d.Sound)
 }
 
+func (d Dog) SpeakThreeTimes() {
+	d.sound = fmt.Sprintf("%v! %v! %v!\n")
+	fmt.Print(d.Sound)
+}
+
 func main() {
 	poodle := Dog{"Poodle", 37, "woof"}
 	fmt.Println(poodle)
@@ -19,4 +24,6 @@ func main() {
 
 	poodle.Sound = "Arf"
 	poodle.Speak()
+
+	poodle.SpeakThreeTimes()
 }
