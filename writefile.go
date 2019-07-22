@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"os"
 )
@@ -13,6 +14,8 @@ func main() {
 
 	ln, err := io.WriteString(file, content)
 	checkerror(err)
+
+	fmt.Printf("all done with file of %v characters.", ln)
 }
 
 func checkerror() {
