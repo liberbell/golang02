@@ -15,7 +15,7 @@ func main() {
 	ln, err := io.WriteString(file, content)
 	checkerror(err)
 
-	fmt.Printf("all done with file of %v characters.", ln)
+	fmt.Printf("all done with file of %v characters.\n", ln)
 }
 
 func checkerror(err error) {
