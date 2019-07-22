@@ -14,6 +14,9 @@ func main() {
 	defer fmt.Println("Statement 3.")
 	defer fmt.Println("Statement 4.")
 	fmt.Println("Undefer Statement.")
+
+	x := 1000
+	fmt.Println("value of x:", x)
 }
 
 func myFunc() {
