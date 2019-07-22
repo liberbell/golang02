@@ -22,3 +22,8 @@ func connect() {
 	isConnected = true
 	fmt.Println("connected to database.")
 }
+
+func disconnect() {
+	isConnected = false
+	fmt.Println("disconnect.")
+}
