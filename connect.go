@@ -9,3 +9,11 @@ func main() {
 	dosomething()
 	fmt.Printf("connection open: %v\n", isConnected)
 }
+
+func dosomething() {
+	connect()
+	fmt.Println("defering connection.")
+	defer disconnect()
+	fmt.Printf("connection open: %v\n", isConnected)
+	fmt.Println("Doing something.")
+}
