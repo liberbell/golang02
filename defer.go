@@ -17,6 +17,7 @@ func main() {
 
 	x := 1000
 	defer fmt.Println("value of x:", x)
+	x++
 }
 
 func myFunc() {
