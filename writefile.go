@@ -18,7 +18,7 @@ func main() {
 	fmt.Printf("all done with file of %v characters.", ln)
 }
 
-func checkerror() {
+func checkerror(err error) {
 	if err != nil {
 		panic(err)
 	}
