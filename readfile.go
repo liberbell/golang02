@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	filename := "/hello.txt"
+	filename := "/fromstring.txt"
 }
 
 func checkerror(err error) {
