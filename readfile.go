@@ -12,6 +12,8 @@ func main() {
 	checkerror(err)
 
 	fmt.Println("Read from file: ", content)
+	result := string(content)
+	fmt.Println("Read from file)(string): ", resutl)
 }
 
 func checkerror(err error) {
