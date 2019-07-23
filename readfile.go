@@ -11,7 +11,7 @@ func main() {
 	content, err := ioutil.ReadFile(filename)
 	checkerror(err)
 
-	fmt.Println(content)
+	fmt.Println("Read from file: ", content)
 }
 
 func checkerror(err error) {
