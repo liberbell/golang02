@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	filename := "/fromstring.txt"
+	filename := "./fromstring.txt"
 
 	content, err := ioutil.ReadFile(filename)
 	checkerror(err)
