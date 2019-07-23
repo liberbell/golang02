@@ -16,7 +16,7 @@ func main() {
 	}
 }
 
-func processPath(path string, info os.FileInfo, err error) {
+func processPath(path string, info os.FileInfo, err error) error {
 	if err != nil {
 		return err
 	}
