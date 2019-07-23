@@ -28,5 +28,6 @@ func processPath(path string, info os.FileInfo, err error) error {
 			fmt.Println("File: ", path)
 		}
 	}
+
 	return nil
 }
