@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"io/ioutil"
 	"os"
 )
 
@@ -16,6 +17,9 @@ func main() {
 	checkerror(err)
 
 	fmt.Printf("all done with file of %v characters.\n", ln)
+
+	bytes := []byte(content)
+	ioutil.WriteFile("./fromBytes.txt", bytes)
 }
 
 func checkerror(err error) {
