@@ -13,7 +13,7 @@ func main() {
 
 	fmt.Println("Read from file: ", content)
 	result := string(content)
-	fmt.Println("Read from file)(string): ", resutl)
+	fmt.Println("Read from file)(string): ", result)
 }
 
 func checkerror(err error) {
