@@ -27,5 +27,6 @@ func contentFromServer(url string) string {
 	bytes, err := ioutil.ReadAll(resp.Body)
 	checkError(err)
 
-	fmt.Print(bytes)
+	jsondata := string(bytes)
+	fmt.Print(jsondata)
 }
