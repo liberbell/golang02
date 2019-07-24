@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -13,4 +14,13 @@ func main() {
 		panic(err)
 	}
 	fmt.Printf("Response Type: %T\n", resp)
+
+	defer resp.Body.Close()
+	bytes, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		panic(err)
+	}
+
+	content := string(bytes)
+	fmt.Print(content)
 }
