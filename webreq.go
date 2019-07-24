@@ -12,5 +12,5 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("Response Type: %T", resp)
+	fmt.Printf("Response Type: %T\n", resp)
 }
