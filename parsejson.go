@@ -39,7 +39,7 @@ func contentFromServer(url string) string {
 	fmt.Print(jsondata)
 }
 
-func tourFromJson(content string) []Tour {
+func toursFromJson(content string) []Tour {
 	tours := make([]Tour, 0, 20)
 
 	decoder := json.NewDecoder(strings.NewReader(content))
