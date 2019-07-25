@@ -18,7 +18,7 @@ func main() {
 
 	// fmt.Println(content)
 	tours := toursFromJson(content)
-	fmt.Println(tours)
+	fmt.Println(content)
 }
 
 func checkError(err error) {
