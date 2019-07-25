@@ -1,10 +1,16 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"strings"
 )
+
+type Tour struct {
+	Name, Price string
+}
 
 func main() {
 	url := "http://services.explorecalifornia.org/json/tours.php"
@@ -29,4 +35,13 @@ func contentFromServer(url string) string {
 
 	jsondata := string(bytes)
 	fmt.Print(jsondata)
+}
+
+func tourFromJson(content string) []Tour {
+	tours := make([]Tour, 0, 20)
+
+	decoder := json.NewDecoder(strings.NewReader(content))
+	_, err := decoder.Token()
+	checkerror(err)
+
 }
