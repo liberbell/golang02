@@ -16,7 +16,8 @@ func main() {
 	url := "http://services.explorecalifornia.org/json/tours.php"
 	content := contentFromServer(url)
 
-	fmt.Println(content)
+	// fmt.Println(content)
+	tours := tours.json(content)
 }
 
 func checkError(err error) {
@@ -44,4 +45,11 @@ func tourFromJson(content string) []Tour {
 	_, err := decoder.Token()
 	checkerror(err)
 
+	var tour Tour
+	for decoder.More() {
+		err := decoder.Decode(&tour)
+		checkerror(err)
+		tours = append(tours, tour)
+	}
+	return tours
 }
