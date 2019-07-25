@@ -44,12 +44,12 @@ func tourFromJson(content string) []Tour {
 
 	decoder := json.NewDecoder(strings.NewReader(content))
 	_, err := decoder.Token()
-	checkerror(err)
+	checkError(err)
 
 	var tour Tour
 	for decoder.More() {
 		err := decoder.Decode(&tour)
-		checkerror(err)
+		checkError(err)
 		tours = append(tours, tour)
 	}
 	return tours
