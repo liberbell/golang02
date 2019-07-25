@@ -18,6 +18,7 @@ func main() {
 
 	// fmt.Println(content)
 	tours := tours.json(content)
+	fmt.Println(tours)
 }
 
 func checkError(err error) {
