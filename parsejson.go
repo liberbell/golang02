@@ -19,6 +19,11 @@ func main() {
 	// fmt.Println(content)
 	tours := toursFromJson(content)
 	fmt.Println(tours)
+
+  for _, tour := range tours {
+    price, _, := big.ParseFloat(tour.Price, 10, 2, big.ToZero)
+    fmt.Printf("%v ($%.2f)", tour.Name, price)
+  }
 }
 
 func checkError(err error) {
