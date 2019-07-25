@@ -18,7 +18,7 @@ func main() {
 
 	// fmt.Println(content)
 	tours := toursFromJson(content)
-	fmt.Println(content)
+	fmt.Println(tours)
 }
 
 func checkError(err error) {
@@ -35,8 +35,7 @@ func contentFromServer(url string) string {
 	bytes, err := ioutil.ReadAll(resp.Body)
 	checkError(err)
 
-	jsondata := string(bytes)
-	fmt.Print(jsondata)
+	return string(bytes)
 }
 
 func toursFromJson(content string) []Tour {
