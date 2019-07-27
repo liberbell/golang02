@@ -1,9 +1,9 @@
 package main
 
+type hello struct {
+}
+
 func main() {
-	if err != nil {
-		panic(err)
-	}
 }
 
 func checkError(err error) {
